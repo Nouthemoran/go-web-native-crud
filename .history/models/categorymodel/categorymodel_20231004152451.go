@@ -1,0 +1,17 @@
+package categorymodel
+
+import (
+	"crud/config"
+	"crud/entities"
+)
+
+func GetAll() {
+	rows, err := config.DB.Query(`SELECT * FROM categories`) 
+	if err != nil {
+		panic(err)
+	}
+
+	defer rows.Close()
+
+	var categories []entities.Category
+}

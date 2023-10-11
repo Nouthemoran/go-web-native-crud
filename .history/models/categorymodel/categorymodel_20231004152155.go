@@ -1,0 +1,5 @@
+package categorymodel
+
+func GetAll() {
+	
+}
